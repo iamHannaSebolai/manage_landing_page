@@ -1,0 +1,1188 @@
+/*-----|| family font||---------*/
+@font-face {
+    font-family: VietnamPro;
+    src: url("./fonts/BeVietnamPro-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: VietnamPro1;
+    src: url("./fonts/BeVietnamPro-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: VietnamPro2;
+    src: url("./fonts/BeVietnamPro-Bold.ttf");
+    font-weight: 700;
+}
+/*-----------------------------------------------*/
+
+
+/*-----|| root ||---------*/
+:root{
+    /*------**Primary*-------*/
+    --Orange-400: hsl(12, 88%, 59%);
+    --Blue-950: hsl(228, 39%, 23%);
+
+    /*------**Neutral*-------*/
+    --Gray-950: hsl(233, 12%, 13%);
+    --Orange-50: hsl(13, 100%, 96%);
+    --Gray-50: hsl(0, 0%, 98%);
+    --Grey-400: hsl(210, 4%, 67%);
+}
+/*-----------------------------------------------*/
+
+
+/*-----||body ||---------*/
+body{
+    font-size: 16px;
+    font-family: VietnamPro;
+    width: 80%;
+    margin: auto;
+}
+p{
+    color: var(--Grey-400);
+}
+/*-----------------------------------------------*/
+
+/*-----|| navigation bar ||---------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.closebtn{
+    display: none;
+}
+.openbtn{
+    display: none;
+}
+/*----middle------*/
+
+.nav-links a{
+    text-decoration: none;
+    padding:10px;
+    color: var(--Blue-950);
+    font-size: 12px;
+}
+
+.nav-links a:hover{
+    color: var(--Grey-400);
+}
+/*----last------*/
+
+button{
+    padding: 12px 35px;
+    border: none;
+    border-radius:20px;
+    background-color: var(--Orange-400);
+    color: var(--Gray-50);
+    font-family: VietnamPro1;
+}   
+    
+/*-----------------------------------------------*/
+
+/*-----|| hero section ||---------*/
+.hero-sec{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+/*----left------*/
+.hero-left{
+  
+    width: 45%;
+}
+.hero-left h1{
+    color: var(--Blue-950);
+    font-size: 32px;
+    font-family: VietnamPro2;
+}
+
+
+
+/*----right------*/
+.hero-right{
+    
+    width: 45%;
+}
+.hero-right img{
+    width: 100%;
+}
+/*-----------------------------------------------*/
+
+
+/*-----|| section 2 ||---------*/
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/*----left------*/
+.sec2-left{
+    width: 45%;
+}
+.sec2-left h2 {
+    color: var(--Blue-950);
+    font-size: 28px;
+    font-family: VietnamPro1;
+}
+.sec2-left p{
+    width:65%;
+    font-size: 12px;
+    
+}
+/*----right------*/
+.sec2-right{
+    width: 45%;
+}
+/*--grid---*/
+.grid1{
+   
+}
+.grid1-left{
+    display: flex;
+    height: 18px;
+    align-items: center;
+    background-color: var(--Orange-50);
+   
+}
+#num{
+    padding:5px 20px;
+    margin-top: 10px;
+    align-self:flex-end;
+}
+
+.grid1-left h3{
+    color: var(--Blue-950);
+    font-size: 14px;
+    font-family: VietnamPro1;
+    margin-left: 15px;
+}
+
+.grid1-right{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.grid1-right p{
+    width: 80%;
+    font-size: 12px;
+    
+    margin-left:20px;
+    margin-top: 0;
+    
+}
+/*-----------------------------------------------*/
+
+
+/*-----|| section 3 ||---------*/
+.sec3-h3{
+   color: var(--Blue-950);
+    font-size: 24px; 
+    text-align: center;
+}
+.sec3 {
+    display: flex;
+    justify-content: space-between;
+    
+    overflow: scroll;
+
+}
+/*---first grid---*/
+.sec3-grid1{
+    text-align: center;
+    width:100%;
+
+}
+
+.sec3-grid1 img{
+    width:20%;
+}
+.sec3-grid1 h4{
+    font-size: 12px;
+    color: var(--Blue-950);
+    font-family: VietnamPro1;
+}
+.sec3-grid1 p{
+   
+    font-size: 12px;
+    width: 100%;
+}
+
+/*---second grid---*/
+.sec3-grid2{
+    text-align: center;
+    width:100%;
+}
+
+.sec3-grid2 img{
+    width:20%;
+}
+.sec3-grid2 h4{
+    font-size: 12px;
+    color: var(--Blue-950);
+    font-family: VietnamPro1;
+}
+.sec3-grid2 p{
+    font-size: 12px;
+}
+
+
+/*---third grid---*/
+.sec3-grid3{
+    text-align: center;
+    width:100%;
+}
+
+.sec3-grid3 img{
+    width:20%;
+}
+.sec3-grid3 h4{
+    font-size: 12px;
+    color: var(--Blue-950);
+    font-family: VietnamPro1;
+}
+.sec3-grid3 p{
+    font-size: 12px;
+}
+
+
+/*---fourth grid---*/
+.sec3-grid4{
+    text-align: center;
+    width:100%;
+}
+
+.sec3-grid4 img{
+    width:20%;
+}
+.sec3-grid4 h4{
+    font-size: 12px;
+    color: var(--Blue-950);
+    font-family: VietnamPro1;
+}
+.sec3-grid4 p{
+    font-size: 12px;
+}
+
+
+.sec3-btn{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*-----------------------------------------------*/
+
+
+/*-----|| section4  ||---------*/
+.sec4{
+    
+    display: flex;
+    justify-content: space-around;
+    height: 18vh;
+    background-color:var(--Orange-400);
+    margin-bottom: 0px;
+}
+.sec4 h3{
+    color: var(--Gray-50);
+    font-size: 28px;
+}
+
+.sec4 button{
+    padding: 12px 30px;
+    border: none;
+    border-radius:20px;
+    background-color: var(--Gray-50);
+    color: var(--Orange-400);
+    font-family: VietnamPro1;
+}
+/*-----------------------------------------------*/
+
+
+/*-----|| footer    ||---------*/
+footer{
+   background-color:var(--Gray-950) ;
+   display: flex;
+   justify-content: space-around;
+   height: 20vh;
+   align-items: center;
+   
+}
+.ft1{
+    width:20%;
+    height: 20vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ft1-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.ft-img:hover{
+    color: var(--Orange-400);
+}
+
+.ft2{
+    width:10%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.ft2 a{
+    text-decoration: none;
+    color: var(--Gray-50);
+    font-size: 12px;
+
+}
+
+
+.ft3{
+    width:10%;
+
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    justify-content: center;
+    row-gap: 20px;
+
+}
+
+.ft3 a{
+    text-decoration: none;
+    color: var(--Gray-50);
+    font-size: 12px;
+}
+
+
+.ft4{
+    width:30%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ft4-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ft4-top input{
+    padding: 10px 20px;
+    border: none;
+    border-radius:20px;
+    color: var(--Gray-50);
+    font-family: VietnamPro1;
+}   
+
+.ft4-top button{
+ padding: 5px 16px;
+ font-size: 12px;
+}
+.ft4-btm{
+    color: var(--Grey-50);
+    text-align: center;
+}
+.ft4-btm p{
+    font-size: 12px;
+}
+/*-----------------------------------------------*/
+ 
+/*-----|| media queries - mobile small view||---------*/
+@media all and (width<=320px) {
+    body{
+        width: 100%;
+        margin: auto;
+        
+    }
+    /**==++  +navigation+  +====**/
+    nav{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .nav-links{
+        width: 0;
+        position:fixed;
+    
+        height:35vh;
+        z-index: 1;
+        top: 1px;
+        background-color: var(--Gray-50);
+        
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-top: 80px;
+     }
+
+    .nav-links a{
+        padding: 8px 10px 8px 32px;
+        display: block;
+        text-align: center;
+        font-family: VietnamPro1;
+    }
+
+    .openbtn{
+        display: contents;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+    .closebtn{
+        display: contents;
+        
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    .nav-links .closebtn{
+        position:absolute;
+        top:3px;
+        right:25px; 
+    }
+/**********************************/
+
+    /**==++  +hero-section+  +====**/
+    .hero-sec{
+        
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+    /*----image------*/
+    .hero-right{
+        width: 100%;
+       
+        margin-bottom: 10px;
+    }
+     /*----text------*/
+     .hero-left{
+        width: 100%;
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        
+     }
+     .hero-left h1{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 0;
+     }
+     .hero-left p{
+        font-size: 12px;
+        text-align: center;
+        line-height: 4vh;
+     }
+     .hero-left button{
+        width: 50%;
+        padding: 10px;
+        font-size: 12px;
+        
+     }
+/**********************************/
+
+    /**==++  +section2+  +====**/
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+     /*----left side from desktop view------*/
+     .sec2-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+     }
+     .sec2-left h2{
+        font-size: 24px;
+     }
+
+     .sec2-left p{
+        width: 100%;
+        line-height: 4vh;
+        margin-top: 0;
+     }
+     /*----right side from desktop view------*/
+    .sec2-right{
+        width: 100%; 
+    }
+    .grid1{
+        margin-bottom: 30px;
+    }
+    .grid1-left{
+        
+        margin-left: 10px;
+    }
+    #num{
+        padding: 0 12px;
+    }
+    .grid1-left h3{
+        font-size: 12px;
+        margin-left: 10px;
+        align-items: center;
+    }
+    .grid1-right{
+        margin-left: 0;
+    }
+    .grid1-right p{
+        width: 90%;
+        
+        margin-left: 0;
+        font-size: 10px;
+        margin: auto;
+        line-height: 18px;
+    }
+/**********************************/
+
+
+    /**==++  +section3+  +====**/
+    .sec3{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+/**********************************/
+
+
+    /**==++  +section4+  +====**/
+    .sec4{
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        align-items: center;
+    }
+    .sec4 h3{
+        text-align: center;
+        width: 90%;
+        font-size: 28px;
+    }
+    .sec4 button{
+        margin-top: 0;
+    }
+/**********************************/
+
+
+    /**==++  +footer+    +====**/
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .ft4{
+        width: 100%;
+    }
+    .ft4-top{
+        display: flex;
+    }
+    #ft2-sec{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        height: 30vh;
+    }
+    .ft2{
+        width: 50%;
+        
+        height: 30vh;
+        row-gap: 4vh;
+    }
+    .ft3{
+        width: 50%;
+        
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+    }
+    .ft1{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .ft1-img{
+        width: 80%;
+        margin: auto;
+        
+       
+    }
+/**********************************/
+/*-----------------------------------------------*/
+}
+
+
+/*-----|| media queries - mobile medium view||---------*/
+@media all and ( 320px < width <=  375px ){
+ html, body{
+        width: 100%;
+        margin: 0 ;
+        padding: 0 ;
+        overflow-x: hidden;
+        
+    }
+    .container, section{
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+   
+/**==++  +navigation+  +====**/
+    nav{
+        margin-bottom: 50px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+    }
+    .nav-links{
+        width: 0;
+        position:fixed;
+    
+        height:45vh;
+        z-index: 1;
+        top: 1px;
+        background-color: var(--Gray-50);
+        
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-top: 80px;
+    }
+    .nav-links a{
+        padding: 8px 10px 8px 32px;
+        display: block;
+        text-align: center;
+        font-family: VietnamPro1;
+        font-size: 18px;
+    }
+    .openbtn{
+    display: contents;
+    cursor: pointer;
+    padding: 10px 15px;
+    }
+    .closebtn{
+        display: contents;
+    }
+    .nav-btn{
+        display: none;
+    }
+
+/**********************************/
+
+
+/**==++  +hero-section+  +====**/
+    .hero-sec{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;  
+        width: 80%; 
+    }
+
+ /*----image------*/
+    .hero-right{
+        width: 100%;
+    }
+  /*----text------*/
+    .hero-left{
+        width: 100%;
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-left h1{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 0;
+        }
+    .hero-left p{
+        font-size: 14px;
+        text-align: center;
+        line-height: 4vh;
+        }
+/**********************************/
+
+/**==++  +section2+  +====**/
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: 80%; 
+    }
+/*----left side from desktop view------*/
+    .sec2-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec2-left h2{
+        font-size: 26px;
+    }
+    .sec2-left p{
+        width: 100%;
+        margin-top: 0;
+        line-height: 4vh;
+        text-align: center;
+        font-size: 12px;
+    }
+ /*----right side from desktop view------*/
+    .sec2-right{
+        width: 100%;
+
+    }
+    .grid1{
+        margin-bottom: 30px;
+    }
+    .grid1-left{
+        margin-left: 10px;
+        height: 4vh;
+    }
+    .grid1-left h3{
+        font-size: 12px;
+    }
+    #num{
+        padding: 3px 12px;
+    }
+
+
+    .grid1-right{
+        margin-left: 0;
+    
+    }
+    .grid1-right p{
+        width: 100%;
+        margin-left: 0;
+        margin: auto;
+        font-size: 12px;
+        line-height: 4vh;
+    }
+/**********************************/
+
+
+/**==++  +section3+  +====**/
+    .sec3-h3{
+        width: 100%;
+        margin-left: 0;
+        margin: auto;
+        font-size: 26px;
+        text-align: center;
+        border: solid black;
+    }
+    .sec3{
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+    }
+/**********************************/
+
+
+/**==++  +section4+  +====**/
+    .sec4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        align-items: center;
+    }
+
+    .sec4 h3{
+        text-align: center;
+        width: 90%;
+        font-size: 28px;
+    }
+    .sec4 button{
+        margin-top: 0;
+    }
+
+/**********************************/
+
+
+/**==++  +footer+    +====**/
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .ft4{
+        width: 100%;
+    }
+    .ft4-top{
+        display: flex;
+    }
+    #ft2-sec{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: 30vh;
+    }
+    .ft2{
+        width: 50%;
+        height: 30vh;
+    }
+    .ft3{
+        width: 50%;
+        height: 25vh;
+    }
+    .ft1{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .ft1-img{
+        width: 80%;
+        margin: auto;
+        
+    }
+/**********************************/
+    /*-----------------------------------------------*/
+
+}
+
+/*-----|| media queries - mobile large view||---------*/
+
+@media all and (375px < width <=425px){
+    body{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 ;
+        
+    }
+    .container, section{
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+   
+/**==++  +navigation+  +====**/
+    nav{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+        
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .nav-links{
+        width: 0;
+        position: fixed;
+        height: 45vh;
+        z-index: 1;
+        top: 1px;
+        background-color: var(--Gray-50);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-top: 80px;
+    }
+
+    .nav-links a{
+        padding: 8px 10px 8px 32px;
+        display: block;
+        text-align: center;
+        font-family: VietnamPro1;
+        font-size: 16px;
+    }
+
+    .openbtn{
+        display: contents;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+    .closebtn{
+        display: contents;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+/**********************************/
+
+
+/**==++  +hero-section+  +====**/
+    .hero-sec{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    /*----image------*/
+    .hero-right{
+        width: 100%;
+    }
+    /*----text------*/
+    .hero-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .hero-left h1{
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .hero-left p{
+        font-size: 16px;
+        text-align: center;
+        line-height: 4vh;
+    }
+/**********************************/
+
+
+/**==++  +section2+  +====**/
+    .sec2{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    /*----left side from desktop view------*/
+    .sec2-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .sec2-left h2{
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+    }
+    .sec2-left p{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 0;
+        line-height: 4vh;
+    }
+    /*----right side from desktop view------*/
+    .sec2-right{
+        width: 100%;
+    }
+    .grid1{
+        margin-bottom: 30px;
+    }
+    .grid1-left{
+        margin-left: 10px;
+        height:5vh;
+    }
+    #num{
+        padding: 5px 12px;
+    }
+    .grid1-left h3{
+        font-size: 14px;
+    }
+    .grid1-right p{
+        width: 100%;
+        font-size: 14px;
+        line-height: 4vh;
+        margin-left: 0;
+        margin: auto;
+    }
+    /**********************************/
+
+
+    /**==++  +section3+  +====**/
+    .sec3-h3{
+        font-size: 28px;
+    }
+    .sec3{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+       
+    }
+        /*-----profile 1-----*/
+    .sec3-grid1 h4{
+        font-size: 14px;
+    }    
+    .sec3-grid1 p{
+        font-size: 14px;
+        width: 90%;
+        line-height: 5vh;
+        text-align: center;
+    }
+        /*-----profile 2-----*/
+    .sec3-grid2 h4{
+        font-size: 14px;
+    }
+    .sec3-grid2 p{
+        font-size: 14px;
+        width: 90%;
+        line-height: 5vh;
+        text-align: center;
+    }
+        /*-----profile 3-----*/
+    .sec3-grid3 h4{
+        font-size: 14px;
+    }
+     .sec3-grid3 p{
+        font-size: 14px;
+        width:90%;
+        line-height: 5vh;
+        text-align: center;
+        
+    }
+        /*-----profile 41-----*/
+    .sec3-grid4 h4{
+        font-size: 14px;
+    }
+     .sec3-grid4 p{
+        font-size: 14px;
+        width: 90%;
+        line-height: 5vh;
+        text-align: center;
+    }
+    /**********************************/
+
+
+    /**==++  +section4+  +====**/
+    .sec4{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+    .sec4 h3{
+        text-align: center;
+        width: 80%;
+        font-size: 38px;
+       padding-top: 60px;
+    }
+    .sec4 button{
+        margin-top: 0;
+        
+    }
+    /**********************************/
+
+
+    /**==++  +footer+    +====**/
+    footer{
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ft4{
+        width: 100%;
+    }
+    .ft4-top{
+        display: flex;
+    }
+    .ft4-top input{
+        padding: 10px 40px;
+
+    }
+
+     .ft3{
+         width: 50%;
+        height: 25vh
+    }
+     #ft2-sec{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: 30vh;
+    }
+
+     .ft2{
+         width: 50%;
+        height: 30vh;
+    }
+
+     .ft1{
+         width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+     .ft1-img{
+        width: 80%;
+        margin: auto;
+        
+    }
+    /**********************************/
+/*-----------------------------------------------*/
+}
+
+
+
+/*-----|| media queries - tablet view||---------*/
+/**==++  +navigation+  +====**/
+/**********************************/
+
+
+/**==++  +hero-section+  +====**/
+/**********************************/
+
+
+/**==++  +section2+  +====**/
+/**********************************/
+
+
+/**==++  +section3+  +====**/
+/**********************************/
+
+
+/**==++  +section4+  +====**/
+/**********************************/
+
+
+/**==++  +footer+    +====**/
+/**********************************/
+    /*-----------------------------------------------*/
