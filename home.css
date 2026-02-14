@@ -30,27 +30,47 @@
     --Grey-400: hsl(210, 4%, 67%);
 }
 /*-----------------------------------------------*/
-
+* {
+  box-sizing: border-box;
+}
 
 /*-----||body ||---------*/
 body{
     font-size: 16px;
     font-family: VietnamPro;
-    width: 80%;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    background-color: #fff;
+    overflow-x: hidden;
 }
 p{
     color: var(--Grey-400);
+    font-size: medium;
+}
+h4{
+    font-size: larger;
+}
+h2 {
+    font-size: x-large;
 }
 /*-----------------------------------------------*/
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
 /*-----|| navigation bar ||---------*/
 nav{
+    
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
 }
 .closebtn{
     display: none;
@@ -59,12 +79,18 @@ nav{
     display: none;
 }
 /*----middle------*/
-
+.nav-links {
+    
+    width: 100%;
+    text-align: center;
+}
 .nav-links a{
     text-decoration: none;
+    
     padding:10px;
     color: var(--Blue-950);
     font-size: 12px;
+    font-weight: 500;
 }
 
 .nav-links a:hover{
@@ -73,14 +99,19 @@ nav{
 /*----last------*/
 
 button{
-    padding: 12px 35px;
+    padding: 8px 24px;
     border: none;
+    font-size: 12px;
     border-radius:20px;
     background-color: var(--Orange-400);
     color: var(--Gray-50);
     font-family: VietnamPro1;
 }   
+
+.nav-btn button {
     
+    box-shadow: 0 10px 20px rgba(242, 95, 58, 0.25);
+}
 /*-----------------------------------------------*/
 
 /*-----|| hero section ||---------*/
@@ -88,17 +119,20 @@ button{
     
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    gap: 4rem;
+    margin-bottom: 15rem;
 }
 /*----left------*/
 .hero-left{
-  
-    width: 45%;
+    width: 50%;
 }
 .hero-left h1{
     color: var(--Blue-950);
-    font-size: 32px;
+    font-size:64px;
     font-family: VietnamPro2;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+
 }
 
 
@@ -106,7 +140,8 @@ button{
 /*----right------*/
 .hero-right{
     
-    width: 45%;
+    width: 50%;
+    position: relative;
 }
 .hero-right img{
     width: 100%;
@@ -118,7 +153,8 @@ button{
 .sec2{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 6rem;
+    gap: 4rem;
 }
 
 /*----left------*/
@@ -132,7 +168,7 @@ button{
 }
 .sec2-left p{
     width:65%;
-    font-size: 12px;
+    
     
 }
 /*----right------*/
@@ -140,25 +176,27 @@ button{
     width: 45%;
 }
 /*--grid---*/
-.grid1{
-   
-}
+
 .grid1-left{
     display: flex;
-    height: 18px;
+    height: 2vh;
     align-items: center;
     background-color: var(--Orange-50);
    
 }
-#num{
-    padding:5px 20px;
-    margin-top: 10px;
-    align-self:flex-end;
+.num {
+  background-color: var(--Orange-400);
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 1rem;
+  font-family: VietnamPro1;
 }
 
 .grid1-left h3{
     color: var(--Blue-950);
-    font-size: 14px;
+    
     font-family: VietnamPro1;
     margin-left: 15px;
 }
@@ -170,9 +208,9 @@ button{
 
 .grid1-right p{
     width: 80%;
-    font-size: 12px;
     
-    margin-left:20px;
+    line-height: 1.6;
+    margin-left: 3.5rem;
     margin-top: 0;
     
 }
@@ -182,16 +220,25 @@ button{
 /*-----|| section 3 ||---------*/
 .sec3-h3{
    color: var(--Blue-950);
-    font-size: 24px; 
+    font-size: 28px; 
     text-align: center;
 }
 .sec3 {
     display: flex;
-    justify-content: space-between;
-    
-    overflow: scroll;
-
+    gap: 2rem;
+    margin-top: 4rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
+.sec3 > div {
+    min-width: 250px;
+    scroll-snap-align: center;
+    background-color: var(--Gray-50);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
 /*---first grid---*/
 .sec3-grid1{
     text-align: center;
@@ -203,13 +250,13 @@ button{
     width:20%;
 }
 .sec3-grid1 h4{
-    font-size: 12px;
+    
     color: var(--Blue-950);
     font-family: VietnamPro1;
 }
 .sec3-grid1 p{
    
-    font-size: 12px;
+    
     width: 100%;
 }
 
@@ -223,13 +270,11 @@ button{
     width:20%;
 }
 .sec3-grid2 h4{
-    font-size: 12px;
+    
     color: var(--Blue-950);
     font-family: VietnamPro1;
 }
-.sec3-grid2 p{
-    font-size: 12px;
-}
+
 
 
 /*---third grid---*/
@@ -242,13 +287,11 @@ button{
     width:20%;
 }
 .sec3-grid3 h4{
-    font-size: 12px;
+    
     color: var(--Blue-950);
     font-family: VietnamPro1;
 }
-.sec3-grid3 p{
-    font-size: 12px;
-}
+
 
 
 /*---fourth grid---*/
@@ -261,13 +304,11 @@ button{
     width:20%;
 }
 .sec3-grid4 h4{
-    font-size: 12px;
+    
     color: var(--Blue-950);
     font-family: VietnamPro1;
 }
-.sec3-grid4 p{
-    font-size: 12px;
-}
+
 
 
 .sec3-btn{
@@ -282,35 +323,37 @@ button{
 .sec4{
     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     height: 18vh;
+    padding: 4rem 6rem;
     background-color:var(--Orange-400);
     margin-bottom: 0px;
 }
 .sec4 h3{
     color: var(--Gray-50);
-    font-size: 28px;
+    font-size: 36px;
+  line-height: 1.2;
+  max-width: 450px;
 }
 
 .sec4 button{
-    padding: 12px 30px;
-    border: none;
-    border-radius:20px;
-    background-color: var(--Gray-50);
-    color: var(--Orange-400);
-    font-family: VietnamPro1;
+    background-color: white;
+  color: var(--Orange-400);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 /*-----------------------------------------------*/
 
 
 /*-----|| footer    ||---------*/
 footer{
-   background-color:var(--Gray-950) ;
-   display: flex;
-   justify-content: space-around;
-   height: 20vh;
-   align-items: center;
-   
+    background-color:var(--Gray-950) ;
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+    padding: 4rem 6rem;
+    width: 100%;
 }
 .ft1{
     width:20%;
@@ -331,9 +374,14 @@ footer{
     color: var(--Orange-400);
 }
 
+#ft2-sec{
+    display: flex;
+    justify-content: space-around;
+}
+
 .ft2{
     width:10%;
-    height: 20vh;
+    
     display: flex;
     flex-direction: column;
     padding-left: 40px;
@@ -350,9 +398,9 @@ footer{
 
 
 .ft3{
-    width:10%;
+    width:30%;
 
-    height: 20vh;
+    
     display: flex;
     flex-direction: column;
     padding-left: 40px;
@@ -402,787 +450,120 @@ footer{
 }
 /*-----------------------------------------------*/
  
+
+/* Mobile default */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    flex-direction: column;
+    background: var(--Gray-50);
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 80px;
+    z-index: 1000;
+  }
+
+  .openbtn {
+    display: block;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .closebtn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+    .hero-sec,
+  .sec2,
+  .sec4 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left p,
+  .sec2-left p {
+    margin: 0 auto;
+  }
+
+  .grid1-right p {
+    margin-left: 0;
+  }
+
+  .sec3 {
+    flex-direction: column;
+  }
+}
 /*-----|| media queries - mobile small view||---------*/
-@media all and (width<=320px) {
-    body{
-        width: 100%;
-        margin: auto;
-        
-    }
-    /**==++  +navigation+  +====**/
-    nav{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 50px;
-    }
+@media (max-width: 320px) { }
+@media (min-width: 321px) and (max-width: 375px) { }
+@media (min-width: 376px) and (max-width: 425px) { }
+@media (min-width: 426px) and (max-width: 768px) { }
 
-    .nav-links{
-        width: 0;
-        position:fixed;
-    
-        height:35vh;
-        z-index: 1;
-        top: 1px;
-        background-color: var(--Gray-50);
-        
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding-top: 80px;
-     }
+@media (max-width: 768px) {
 
-    .nav-links a{
-        padding: 8px 10px 8px 32px;
-        display: block;
-        text-align: center;
-        font-family: VietnamPro1;
-    }
+  nav {
+    margin-bottom: 50px;
+  }
 
-    .openbtn{
-        display: contents;
-        cursor: pointer;
-        padding: 10px 15px;
-    }
+  .hero-sec,
+  .sec2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
 
-    .closebtn{
-        display: contents;
-        
-    }
+  .hero-left,
+  .hero-right,
+  .sec2-left,
+  .sec2-right {
+    width: 100%;
+  }
 
-    .nav-btn{
-        display: none;
-    }
+  .grid1-left {
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .nav-links .closebtn{
-        position:absolute;
-        top:3px;
-        right:25px; 
-    }
-/**********************************/
+  .grid1-right p {
+    width: 100%;
+    margin-left: 0;
+  }
 
-    /**==++  +hero-section+  +====**/
-    .hero-sec{
-        
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 90px;
-    }
-    /*----image------*/
-    .hero-right{
-        width: 100%;
-       
-        margin-bottom: 10px;
-    }
-     /*----text------*/
-     .hero-left{
-        width: 100%;
-        display: flex;
-        flex-direction:column ;
-        justify-content: center;
-        align-items: center;
-        
-     }
-     .hero-left h1{
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 0;
-     }
-     .hero-left p{
-        font-size: 12px;
-        text-align: center;
-        line-height: 4vh;
-     }
-     .hero-left button{
-        width: 50%;
-        padding: 10px;
-        font-size: 12px;
-        
-     }
-/**********************************/
+  .sec3 {
+    flex-direction: column;
+  }
 
-    /**==++  +section2+  +====**/
-    .sec2{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-     /*----left side from desktop view------*/
-     .sec2-left{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 20px;
-     }
-     .sec2-left h2{
-        font-size: 24px;
-     }
+  .sec4 {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
 
-     .sec2-left p{
-        width: 100%;
-        line-height: 4vh;
-        margin-top: 0;
-     }
-     /*----right side from desktop view------*/
-    .sec2-right{
-        width: 100%; 
-    }
-    .grid1{
-        margin-bottom: 30px;
-    }
-    .grid1-left{
-        
-        margin-left: 10px;
-    }
-    #num{
-        padding: 0 12px;
-    }
-    .grid1-left h3{
-        font-size: 12px;
-        margin-left: 10px;
-        align-items: center;
-    }
-    .grid1-right{
-        margin-left: 0;
-    }
-    .grid1-right p{
-        width: 90%;
-        
-        margin-left: 0;
-        font-size: 10px;
-        margin: auto;
-        line-height: 18px;
-    }
-/**********************************/
+  footer {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    height: auto;
+    padding: 3rem 1rem;
+  }
 
-
-    /**==++  +section3+  +====**/
-    .sec3{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-/**********************************/
-
-
-    /**==++  +section4+  +====**/
-    .sec4{
-        margin-bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 50vh;
-        align-items: center;
-    }
-    .sec4 h3{
-        text-align: center;
-        width: 90%;
-        font-size: 28px;
-    }
-    .sec4 button{
-        margin-top: 0;
-    }
-/**********************************/
-
-
-    /**==++  +footer+    +====**/
-    footer{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100vh;
-    }
-    .ft4{
-        width: 100%;
-    }
-    .ft4-top{
-        display: flex;
-    }
-    #ft2-sec{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        
-        height: 30vh;
-    }
-    .ft2{
-        width: 50%;
-        
-        height: 30vh;
-        row-gap: 4vh;
-    }
-    .ft3{
-        width: 50%;
-        
-        height: 25vh;
-        display: flex;
-        flex-direction: column;
-        row-gap: 4vh;
-    }
-    .ft1{
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        
-    }
-    .ft1-img{
-        width: 80%;
-        margin: auto;
-        
-       
-    }
-/**********************************/
-/*-----------------------------------------------*/
+  .ft1,
+  .ft2,
+  .ft3,
+  .ft4 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 }
-
-
-/*-----|| media queries - mobile medium view||---------*/
-@media all and ( 320px < width <=  375px ){
- html, body{
-        width: 100%;
-        margin: 0 ;
-        padding: 0 ;
-        overflow-x: hidden;
-        
-    }
-    .container, section{
-        width: 100%;
-        padding: 0 1rem;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-   
-/**==++  +navigation+  +====**/
-    nav{
-        margin-bottom: 50px;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 80%;
-    }
-    .nav-links{
-        width: 0;
-        position:fixed;
-    
-        height:45vh;
-        z-index: 1;
-        top: 1px;
-        background-color: var(--Gray-50);
-        
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding-top: 80px;
-    }
-    .nav-links a{
-        padding: 8px 10px 8px 32px;
-        display: block;
-        text-align: center;
-        font-family: VietnamPro1;
-        font-size: 18px;
-    }
-    .openbtn{
-    display: contents;
-    cursor: pointer;
-    padding: 10px 15px;
-    }
-    .closebtn{
-        display: contents;
-    }
-    .nav-btn{
-        display: none;
-    }
-
-/**********************************/
-
-
-/**==++  +hero-section+  +====**/
-    .hero-sec{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;  
-        width: 80%; 
-    }
-
- /*----image------*/
-    .hero-right{
-        width: 100%;
-    }
-  /*----text------*/
-    .hero-left{
-        width: 100%;
-        display: flex;
-        flex-direction:column ;
-        justify-content: center;
-        align-items: center;
-    }
-    .hero-left h1{
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 0;
-        }
-    .hero-left p{
-        font-size: 14px;
-        text-align: center;
-        line-height: 4vh;
-        }
-/**********************************/
-
-/**==++  +section2+  +====**/
-    .sec2{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-        width: 80%; 
-    }
-/*----left side from desktop view------*/
-    .sec2-left{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        
-        text-align: center;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    .sec2-left h2{
-        font-size: 26px;
-    }
-    .sec2-left p{
-        width: 100%;
-        margin-top: 0;
-        line-height: 4vh;
-        text-align: center;
-        font-size: 12px;
-    }
- /*----right side from desktop view------*/
-    .sec2-right{
-        width: 100%;
-
-    }
-    .grid1{
-        margin-bottom: 30px;
-    }
-    .grid1-left{
-        margin-left: 10px;
-        height: 4vh;
-    }
-    .grid1-left h3{
-        font-size: 12px;
-    }
-    #num{
-        padding: 3px 12px;
-    }
-
-
-    .grid1-right{
-        margin-left: 0;
-    
-    }
-    .grid1-right p{
-        width: 100%;
-        margin-left: 0;
-        margin: auto;
-        font-size: 12px;
-        line-height: 4vh;
-    }
-/**********************************/
-
-
-/**==++  +section3+  +====**/
-    .sec3-h3{
-        width: 100%;
-        margin-left: 0;
-        margin: auto;
-        font-size: 26px;
-        text-align: center;
-        border: solid black;
-    }
-    .sec3{
-        display: flex;
-        flex-direction: column;
-        overflow:hidden;
-    }
-/**********************************/
-
-
-/**==++  +section4+  +====**/
-    .sec4{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 50vh;
-        align-items: center;
-    }
-
-    .sec4 h3{
-        text-align: center;
-        width: 90%;
-        font-size: 28px;
-    }
-    .sec4 button{
-        margin-top: 0;
-    }
-
-/**********************************/
-
-
-/**==++  +footer+    +====**/
-    footer{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100vh;
-    }
-    .ft4{
-        width: 100%;
-    }
-    .ft4-top{
-        display: flex;
-    }
-    #ft2-sec{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        height: 30vh;
-    }
-    .ft2{
-        width: 50%;
-        height: 30vh;
-    }
-    .ft3{
-        width: 50%;
-        height: 25vh;
-    }
-    .ft1{
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        
-    }
-    .ft1-img{
-        width: 80%;
-        margin: auto;
-        
-    }
-/**********************************/
-    /*-----------------------------------------------*/
-
-}
-
-/*-----|| media queries - mobile large view||---------*/
-
-@media all and (375px < width <=425px){
-    body{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 ;
-        
-    }
-    .container, section{
-        width: 100%;
-        padding: 0 1rem;
-        box-sizing: border-box;
-    }
-   
-/**==++  +navigation+  +====**/
-    nav{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 50px;
-        
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-    }
-
-    .nav-links{
-        width: 0;
-        position: fixed;
-        height: 45vh;
-        z-index: 1;
-        top: 1px;
-        background-color: var(--Gray-50);
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding-top: 80px;
-    }
-
-    .nav-links a{
-        padding: 8px 10px 8px 32px;
-        display: block;
-        text-align: center;
-        font-family: VietnamPro1;
-        font-size: 16px;
-    }
-
-    .openbtn{
-        display: contents;
-        cursor: pointer;
-        padding: 10px 15px;
-    }
-
-    .closebtn{
-        display: contents;
-    }
-
-    .nav-btn{
-        display: none;
-    }
-/**********************************/
-
-
-/**==++  +hero-section+  +====**/
-    .hero-sec{
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-    /*----image------*/
-    .hero-right{
-        width: 100%;
-    }
-    /*----text------*/
-    .hero-left{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .hero-left h1{
-        width: 100%;
-        font-size: 32px;
-        text-align: center;
-        margin-bottom: 0;
-    }
-    .hero-left p{
-        font-size: 16px;
-        text-align: center;
-        line-height: 4vh;
-    }
-/**********************************/
-
-
-/**==++  +section2+  +====**/
-    .sec2{
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-       
-    }
-    /*----left side from desktop view------*/
-    .sec2-left{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    .sec2-left h2{
-        font-size: 32px;
-        width: 100%;
-        text-align: center;
-    }
-    .sec2-left p{
-        width: 100%;
-        font-size: 14px;
-        text-align: center;
-        margin-top: 0;
-        line-height: 4vh;
-    }
-    /*----right side from desktop view------*/
-    .sec2-right{
-        width: 100%;
-    }
-    .grid1{
-        margin-bottom: 30px;
-    }
-    .grid1-left{
-        margin-left: 10px;
-        height:5vh;
-    }
-    #num{
-        padding: 5px 12px;
-    }
-    .grid1-left h3{
-        font-size: 14px;
-    }
-    .grid1-right p{
-        width: 100%;
-        font-size: 14px;
-        line-height: 4vh;
-        margin-left: 0;
-        margin: auto;
-    }
-    /**********************************/
-
-
-    /**==++  +section3+  +====**/
-    .sec3-h3{
-        font-size: 28px;
-    }
-    .sec3{
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-       
-    }
-        /*-----profile 1-----*/
-    .sec3-grid1 h4{
-        font-size: 14px;
-    }    
-    .sec3-grid1 p{
-        font-size: 14px;
-        width: 90%;
-        line-height: 5vh;
-        text-align: center;
-    }
-        /*-----profile 2-----*/
-    .sec3-grid2 h4{
-        font-size: 14px;
-    }
-    .sec3-grid2 p{
-        font-size: 14px;
-        width: 90%;
-        line-height: 5vh;
-        text-align: center;
-    }
-        /*-----profile 3-----*/
-    .sec3-grid3 h4{
-        font-size: 14px;
-    }
-     .sec3-grid3 p{
-        font-size: 14px;
-        width:90%;
-        line-height: 5vh;
-        text-align: center;
-        
-    }
-        /*-----profile 41-----*/
-    .sec3-grid4 h4{
-        font-size: 14px;
-    }
-     .sec3-grid4 p{
-        font-size: 14px;
-        width: 90%;
-        line-height: 5vh;
-        text-align: center;
-    }
-    /**********************************/
-
-
-    /**==++  +section4+  +====**/
-    .sec4{
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0;
-        padding-bottom: 50px;
-    }
-    .sec4 h3{
-        text-align: center;
-        width: 80%;
-        font-size: 38px;
-       padding-top: 60px;
-    }
-    .sec4 button{
-        margin-top: 0;
-        
-    }
-    /**********************************/
-
-
-    /**==++  +footer+    +====**/
-    footer{
-        height: 100vh;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .ft4{
-        width: 100%;
-    }
-    .ft4-top{
-        display: flex;
-    }
-    .ft4-top input{
-        padding: 10px 40px;
-
-    }
-
-     .ft3{
-         width: 50%;
-        height: 25vh
-    }
-     #ft2-sec{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        height: 30vh;
-    }
-
-     .ft2{
-         width: 50%;
-        height: 30vh;
-    }
-
-     .ft1{
-         width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-     .ft1-img{
-        width: 80%;
-        margin: auto;
-        
-    }
-    /**********************************/
-/*-----------------------------------------------*/
-}
-
-
-
-/*-----|| media queries - tablet view||---------*/
-/**==++  +navigation+  +====**/
-/**********************************/
-
-
-/**==++  +hero-section+  +====**/
-/**********************************/
-
-
-/**==++  +section2+  +====**/
-/**********************************/
-
-
-/**==++  +section3+  +====**/
-/**********************************/
-
-
-/**==++  +section4+  +====**/
-/**********************************/
-
-
-/**==++  +footer+    +====**/
-/**********************************/
-    /*-----------------------------------------------*/
